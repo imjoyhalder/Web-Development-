@@ -1,0 +1,17 @@
+
+
+.parent{
+    height: 400px;
+    background-color: rgba(0, 128, 0, 0.885);
+    margin-top: 300px;
+}
+
+.child{
+    height: 200px;
+    background-color: red;
+    width: 200px;
+    border-radius: 50%;
+
+    position: absolute;
+    
+}

@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+header{
+    background-color: rgb(247, 247, 247);
+}
+/* shared style */
+.size{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.hidden{
+    display: none;
+}
+.light-gray{
+    font-size: 1rem;
+    color: rgb(128, 128, 128);
+}
+
+/* Navigation Bar */
+nav {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    /* gap: 16.875rem; */
+}
+
+/* Logo Section */
+.school-logo {
+    display: flex;
+    max-width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: start;
+}
+
+.school-logo img {
+    max-width: 50px;
+    /* height: 50px; */
+}
+
+.school-logo p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Menu Section */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    
+}
+
+/* Menu Link Colors */
+.a1 { color: rgba(18, 237, 11, 0.962); }
+.a2 { color: rgba(10, 83, 230, 0.962); }
+.a3 { color: rgba(185, 20, 222, 0.962); }
+.a4 { color: rgba(23, 219, 226, 0.962); }
+
+/* Hover Effect */
+.menu ul li a:hover {
+    color: #ff8c00;
+}
+
+/* Contact Button */
+.btn {
+    width: 9rem;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(254, 163, 1);
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    justify-self: end;
+}
+
+/* .btn:hover {
+    background: rgb(255, 136, 0);
+} */
+
+/* Hide default checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger Menu */
+/* .hamburger {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    user-select: none;
+} */
+
+/* hero section */
+
+.heading {
+    font-size: 2.8em;
+}
+.hero-content .first-txt{
+    color: #ff8c00;
+}
+
+.hero-info{
+    /* border: 2px solid green; */
+    padding-top: 150px;
+    margin-left: 140px;
+}
+
+.hero {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.hero .hero-image{
+    justify-self: end;
+}
+.hero-content {
+    max-width: 600px;
+}
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #ff8c00;
+}
+.hero h1 span {
+    color: #1ba3d9;
+}
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+.enroll-btn {
+    background-color: #000000fb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.enroll-btn:hover {
+    background-color: #e67e00;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Standard Curriculum section */
+/* .curiculum,.our-story .main-section*/ .super-main{
+    background-image: url("../assets/bg.png");
+    margin-top: 60px;
+    
+
+    background: url("../assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+.curiculum h2, .our-story h2{
+    font-size: 2.5rem;
+    font-weight: 700px;
+    text-align: center;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 80px auto ;
+    column-gap: 28px;
+}
+
+.card-container .box{
+    max-width: 367px;
+    border: 1px solid skyblue;
+    text-align: center;
+    padding-top: 58px;
+    padding-bottom: 53px;
+    
+
+}
+.box-1{
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box-2{
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box-3{
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box img{
+    max-width: 130px;
+   
+}
+.box h4{
+    font-size: 1.5rem;
+    font-weight: 600px;
+}
+.box .more{
+    color: rgb(100, 200, 255);
+    font-weight: 700px;
+}
+/* bidirectional arrow */
+.arrow{
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+.left-arrow img{
+    width: 50px;
+}
+.right-arrow img{
+    width: 60px;
+}
+
+
+
+/* our stories section */
+
+.story-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 19px;
+    margin: 80px 0;
+    /* border: 1px solid green; */
+}
+
+.story-card-1 {
+    max-width: 100%;
+    min-height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    grid-row: span 2; /* Ensures it spans two rows properly */
+    border-radius: 16px;
+    background: rgb(255, 255, 255); 
+}
+
+.story-card {
+    max-width: 100%;
+    overflow: hidden;
+    background: #fff;
+    /* border: 1px solid green; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+ .story-card-1 img{
+    max-width: 540px;
+    height: 375px;
+ }
+.story-card img{    
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.story-btn {
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    border-radius: 47px;
+    background: rgb(60, 216, 232);
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+.color-1{background-color: #ff8c00;}
+.color-2{background-color:rgb(8, 57, 255);}
+.color-3{background-color: #df05b7;}
+.color-5{background-color: #38ea14;}
+.color-6{background-color: rgb(4, 182, 126);}
+
+.story-content {
+    padding: 15px
+}
+
+.story-content h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 700px;
+    padding-bottom: 34px;
+}
+
+.story-content p {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    
+}
+.story-card h5{
+    font-size: 1rem;
+    font-weight: 800px;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+.view-btn {
+    width: 197px;
+    margin: 0 auto; 
+    padding-bottom: 60px;
+    
+}   
+.btn-view{
+    background-color: black;
+}
+
+
+
+/* Footer Section */
+footer {
+    background-color: rgb(1, 172, 253);
+    padding: 50px 0;
+    color: white;
+}
+
+/* Footer Container */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 123px;
+    padding-bottom: 173px;
+    /* padding: 30px; */
+}
+
+/* Left Section */
+.left-part {
+    text-align: left;
+}
+
+.left-part .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.left-part .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.left-part h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* About School */
+.about-school h4,
+.keep-touch h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.about-school ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-school ul li {
+    margin-bottom: 20px;
+}
+
+.about-school ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.about-school ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+
+
+
+/* Responsive Design for Mobile */
+@media screen and  (max-width: 576px) {
+    .size{
+        max-width: 357px;
+        margin: 0 auto;
+    }
+    nav {
+        grid-template-columns: repeat(2,1fr);
+        padding: 12px 0;
+    }
+    .school-logo img{
+        max-width: 45px;
+    }
+    .school-logo{
+        justify-self: start;
+    }
+    .menubar{
+        justify-self: end;
+    }
+    .menubar img{
+        max-width: 25px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        display: none;
+    }
+
+    /* hero section  */
+   
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hero-content{
+        grid-row: 2;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-section img {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .hero-text p {
+        font-size: 0.9em;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .hide{
+        display: none;
+    }
+    .hidden{
+        display: block;
+    }
+    nav h1{
+        margin-left: 250px;
+    }
+    .hr-line{
+        border: 1px solid rgba(255, 136, 0, 0.386);
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        padding: 20px;
+    }
+    /* Curriculam section  */
+
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+        justify-items: center;
+    }
+    .card-container .box{
+        max-width: 330px;
+        
+    }
+
+    /* footer section */
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 0px;
+        padding-left: 20px;
+    }
+}

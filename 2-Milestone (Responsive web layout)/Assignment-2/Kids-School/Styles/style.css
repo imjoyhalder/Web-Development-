@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksandfont {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Shared Styles */
+.display-flex {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hide{
+    visibility: hidden;
+}
+
+/* Navbar Styles */
+header {
+    background-color: rgb(247, 247, 247);
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 140px;
+}
+
+.with_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.with_logo img {
+    width: 46px;
+}
+
+.menu {
+    gap: 30px;
+}
+
+.menu h4 {
+    cursor: pointer;
+}
+
+.contact-btn {
+    background-color: rgb(254, 163, 1);
+}
+
+/* Banner Section */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 140px;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.container h1 span {
+    color: #FFA500;
+}
+
+.enroll-btn {
+    background-color: black;
+    margin-top: 15px;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.curriculum{
+    background-image: url("../assets/bg.png");
+    border: 3px solid gray;
+    margin: 0 auto;
+}
+
+.curriculum .heading{
+    text-align: center;
+}
+
+.curriculum-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    column-gap: 20px;
+    padding: 20px;
+    max-width: 1300px ;
+    justify-content: center;
+}
+
+.curriculum-box{
+    border: 2px solid green;
+    padding: 20px;
+    
+    height: 367px;
+    display: grid;
+    margin: 0 auto;
+    background-color: rgb(241, 236, 228);
+}
+
+
+@media only screen and (max-width: 576px) {
+    /* responsive for icon text */
+    .navbar{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .with_logo h2 , .contact-btn{
+        visibility: hidden; 
+    }
+    .banner{
+        flex-direction: column;
+    }
+}
