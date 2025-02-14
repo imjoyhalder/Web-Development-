@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px dotted purple;
+            width: 200px;
+        }
+        .swim-container{
+            border: 2px solid tomato;
+            width: 210px;
+        }
+        /*.ring{
+            position: relative;
+            left: 50px;
+            top: 30px; 
+        }*/
+
+        /*.ring{
+            position: absolute;
+            top: 20px; 
+            left: 50px;
+        }*/
+        /*.ring{
+            position: sticky;
+            top: 0px; 
+        }
+            */
+        .ring{
+            position: fixed;
+            top: 50px; 
+            left: 100px;
+        }
+        .dummy{
+            border: 1px solid green;
+            width: 200px;
+            height: 200px;
+        }
+        .demo{
+            border: 2px solid rebeccapurple;
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>CSS postion</h2>
+    <ol>
+        <!-- Flow related -->
+        <li>Static</li>
+        <li>Relative: <small>current postion relative e koto tuku change hobe
+            and will not leave current position.
+        </small></li>
+        <li>Absolute <small>will lose it's won postion and move based on the root</small></li>
+        <!-- Scroll related -->
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ol>
+    <div class="swim-container">
+        <div class="box boy"><img src="swim/boy.svg" alt=""></div>
+        <div class="box ring"><img src="swim/ring.svg" alt=""></div>
+        <div class="box water"><img src="swim/water.svg" alt=""></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+</body>
+</html>

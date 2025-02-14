@@ -1,0 +1,74 @@
+.Fira-Sans-normal{
+    font-family: "Fira Sans";
+    align-items: s
+}
+
+/* shared style */
+.hover-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect */
+.hover-button:hover {
+    background-color: #45a049; /* Darker green */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
+    align-items: baseline;
+    padding: 24px 50px;
+    margin-left: 30px;
+    margin-right: 60px;
+}
+.nav-bar h1{
+    
+    /* Font-weight: 700
+    Font size: 32pxpx
+    Row height: 38px
+    Letter spacing: 0%
+    Align: Align left
+    size */
+    font-size: 32px;
+    font-weight: 700px;
+}
+
+.explore-btn{
+    width: 200px;
+    height: 30px;
+    background-color: #45a049;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 14px;
+    font-weight:600px;
+    color: white;
+}
+
+.banner-section{
+    background-image: url('../assets/hero.png');
+    background-repeat: no-repeat;
+    width: 1280px;
+    height: 450px;
+    background-position: right;
+    background-color: #a7d2a9;
+    background-position: right;
+    margin-left: 160px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.banner-section .banner-info{
+    padding: 90px;
+    
+}
